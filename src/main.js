@@ -2,14 +2,19 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 
-import HelloWorld from './components/HelloWorld.vue';
+import { Swiper as SwiperClass, Mousewheel, Pagination } from 'swiper/core';
+// import VueAwesomeSwiper from 'vue-awesome-swiper'
+import getAwesomeSwiper from 'vue-awesome-swiper/dist/exporter';
+SwiperClass.use([Mousewheel,Pagination]);
+
+import Home from './components/Home.vue';
 import Page2 from './components/Page2.vue';
 
-Vue.use(VueRouter);
-Vue.config.productionTip = false;
+Vue.use(VueRouter,getAwesomeSwiper(SwiperClass));
+Vue.config.productionTip = true;
 
 const routes = [
-    {path: '/', component: HelloWorld},
+    {path: '/', component: Home},
     {path: '/page2', component: Page2}
 ]
 
