@@ -2,14 +2,14 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 
-import HelloWorld from './components/HelloWorld.vue';
+import Home from './components/Home.vue';
 import Page2 from './components/Page2.vue';
 
 Vue.use(VueRouter);
-Vue.config.productionTip = false;
+Vue.config.productionTip = true;
 
 const routes = [
-    {path: '/', component: HelloWorld},
+    {path: '/', component: Home},
     {path: '/page2', component: Page2}
 ]
 
