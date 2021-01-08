@@ -1,6 +1,6 @@
 <template>
   <div >
-    <swiper class="swiper" :options="swiperOption">
+    <swiper class="swiper" :options="swiperOption" :Mousewheel="true">
       <swiper-slide class="slide-one">Slide 1</swiper-slide>
       <swiper-slide class="slide-two">Slide 2</swiper-slide>
       <swiper-slide class="slide-three">Slide 3</swiper-slide>
@@ -29,8 +29,8 @@ export default {
         swiperOption: {
           direction: 'vertical',
           slidesPerView: 1,
-         Keyboard: true,
-          mousewheelControl: true,
+          Keyboard: true,
+          mousewheel: true,
           loop: true,
           pagination: {
             el: '.swiper-pagination',
