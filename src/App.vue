@@ -3,6 +3,7 @@
     <ul class="nav">
       <router-link to="/">Home</router-link>
       <router-link to="page2">Page 2</router-link>
+      <router-link to="page3">Page 3</router-link>
     </ul>
     
     <transition name="fade" mode="out-in">

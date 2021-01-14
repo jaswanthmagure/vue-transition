@@ -1,0 +1,16 @@
+$color-primary: #673AB7;
+$color-secondary: #FFF;
+$color-tertiary: #5A2EA5;
+
+$size-base: 12px;
+$size-small: $size-base / 2;
+$size-large: $size-base * 2;
+
+$clock-size: $size-base * 32;
+$clock-size-small: $size-base * 20;
+$clock-weight: $size-small;
+$clock-weight-small: $size-small / 2;
+$clock-seconds-length: 95%;
+$clock-minutes-length: 85%;
+$clock-hours-length: 75%;
+

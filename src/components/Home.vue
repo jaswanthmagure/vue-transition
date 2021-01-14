@@ -29,13 +29,17 @@ export default {
         swiperOption: {
           direction: 'vertical',
           slidesPerView: 1,
-          Keyboard: true,
           mousewheel: true,
           loop: true,
           pagination: {
             el: '.swiper-pagination',
             clickable: true
-          }
+          },
+          keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+          },
+          speed: 1300,
         }
       }
   },
