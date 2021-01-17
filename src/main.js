@@ -9,6 +9,7 @@ SwiperClass.use([Mousewheel,Pagination,Keyboard]);
 import Home from './components/Home.vue';
 import Page2 from './components/Page2.vue';
 import Page3 from './components/Page3.vue';
+import PreLoading from './components/PreLoading.vue';
 
 Vue.use(VueRouter,getAwesomeSwiper(SwiperClass));
 Vue.config.productionTip = true;
@@ -16,7 +17,9 @@ Vue.config.productionTip = true;
 const routes = [
     {path: '/', component: Home},
     {path: '/page2', component: Page2},
-    {path: '/page3', component: Page3}
+    {path: '/page3', component: Page3},
+    {path: '/PreLoading', component: PreLoading},
+
 ]
 
 const router = new VueRouter ({
